@@ -124,7 +124,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
-        pushButton_load->setText(QApplication::translate("MainWindow", "LOAD", 0));
+        pushButton_load->setText(QApplication::translate("MainWindow", "View", 0));
         pushButton_save->setText(QApplication::translate("MainWindow", "SAVE", 0));
         timeEdit->setDisplayFormat(QApplication::translate("MainWindow", "hh:mm", 0));
         pushButton_OK->setText(QApplication::translate("MainWindow", "OK", 0));

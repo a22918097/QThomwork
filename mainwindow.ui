@@ -49,7 +49,7 @@
      </font>
     </property>
     <property name="text">
-     <string>LOAD</string>
+     <string>View</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_save">

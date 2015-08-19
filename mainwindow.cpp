@@ -58,6 +58,8 @@ void MainWindow::on_pushButton_load_clicked()
 
 void MainWindow::on_calendarWidget_clicked(const QDate &date)
 {
+    if(ui->textBrowser_2->toPlainText()!="")
+        ui->textBrowser_2->clear();
     showdate=date.toString("yyyy/MM/dd");
     ui->calendarWidget->setEnabled(0);
     ui->timeEdit->setEnabled(1);
@@ -98,10 +100,10 @@ void MainWindow::on_timeEdit_timeChanged(const QTime &time)
 void MainWindow::on_pushButton_save_clicked()
 {
     QFile file("todo.txt");
-    if(file.open(QFile::Append |QFile::Text))
+    if(file.open(QFile::WriteOnly |QFile::Append |QFile::Text))
     {
         QTextStream out(&file);
-        out << ui->textBrowser_2->toPlainText()  ;
+        out << endl << ui->textBrowser_2->toPlainText()  ;
     }
 }
 //QString str = "2013-10-15,14:00,sleep";
