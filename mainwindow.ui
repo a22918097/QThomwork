@@ -83,6 +83,12 @@
       <height>271</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
    </widget>
    <widget class="QTimeEdit" name="timeEdit">
     <property name="enabled">
@@ -108,7 +114,7 @@
    </widget>
    <widget class="QPushButton" name="pushButton_OK">
     <property name="enabled">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="geometry">
      <rect>
